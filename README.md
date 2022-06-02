@@ -33,19 +33,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-# About The Project
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-1. [**How to install visual studio code**](https://youtu.be/MlIzFUI1QGA)
-2. **Clone the repo**
-   ```sh
-   git clone https://github.com/IlyasKadi/poisson-boltzmann.git
-   ```
- 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 
