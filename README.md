@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/80456274/171564992-e377d833-c780-45aa-ab44-60c6b35c0425.png" alt="Logo" width="550" height="380">   
+    <img src="https://user-images.githubusercontent.com/80456274/171751416-702b48cb-ef20-4f52-8aac-e7d1f3705a98.png" alt="Logo" width="550" height="380">   
     <h2 align="center">FMM (fast multipole methode) </h2>
     <h3 align="center">Mini Projet</h3>
 </div>
