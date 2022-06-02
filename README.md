@@ -15,13 +15,13 @@
 
   <ol>
     <li>
-      <a href="#Part-I">Part I :</a>
+      <a href="#Part-I">Part I : About the project</a>
          <ul>
               <li><a href="#"></a></li>
            </ul>
     </li>
         <li>
-            <a href="#Part-II">Part II :</a>
+            <a href="#Part-II">Part II : seq-code vs paralle-code</a>
             <ul> 
               <li><a href="#"></a></li>
             </ul>
@@ -215,8 +215,8 @@ After parallelization, we change the value of num_thread to examine how the opti
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Our Team     : [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0)  
  
-   Project Link : [The 2048 Game](https://github.com/IlyasKadi/poisson-boltzmann)   
+   Project Link : [FMM_parall](https://github.com/ATAMAN0/FMM_parall)   
  
-  > Encadré par  : [Mr.ABBAD-Zakariae](https://github.com/IlyasKadi/poisson-boltzmann)  
+  > Encadré par  : [Mr.ABBAD-Zakariae](https://github.com/ATAMAN0/FMM_parall)  
                                                                                              
 <p align="right">(<a href="#top">back to top</a>)</p>
