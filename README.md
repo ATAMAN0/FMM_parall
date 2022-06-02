@@ -17,7 +17,7 @@
   <ol>
      <li><a href="#Project-description">Project description</a></li>
     <li>
-      <a href="#Part-I">Part I : Apache2 server configuration</a>
+      <a href="#Part-I">Part I : Introduction</a>
          <ul>
               <li><a href="#Installation">Install the Apache2 server</a></li>
               <li><a href="#verification-the-configuration-files">Verify the configuration files and identify the role of each file:</a></li>
