@@ -168,11 +168,14 @@ After parallelization, we change the value of num_thread to examine how the opti
 <table>
 <tr>
     <td align="center"><br /><sub>
-      Seq_exmpl
-   </sub><br /></td>
+        
+  
+        #define NUM_THREADS 2
+   
+   </sub><br/></td>
 
    <td align="center"><br /><sub>  
-       parralel_version
+     #define NUM_THREADS 4
    </sub><br /></td>
 </tr>
     
@@ -189,11 +192,11 @@ After parallelization, we change the value of num_thread to examine how the opti
 
 <tr>
     <td align="center"><br /><sub>
-      Seq_exmpl
+      #define NUM_THREADS 8
    </sub><br /></td>
 
    <td align="center"><br /><sub>  
-       parralel_version
+       #define NUM_THREADS 16
    </sub><br /></td>
 </tr>
     
