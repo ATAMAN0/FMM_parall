@@ -24,7 +24,7 @@
      </li>
         
      <li>
-             <a href="#Part-II">Seq Code vs parallel code</a> *
+             <a href="#Part-II">Seq Code vs parallel code</a> 
      </li>
 
            
