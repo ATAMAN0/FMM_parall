@@ -210,6 +210,9 @@ After parallelization, we change the value of num_thread to examine how the opti
 </tr>
 </table> 
 
+> So, ultimately, we go from 19.19 seconds to 1.006 seconds, which is a 94.8 percent improvement.
+
+
 
 
 
