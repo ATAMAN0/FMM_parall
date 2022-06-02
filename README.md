@@ -18,9 +18,6 @@
      <li><a href="#Project-description">Project description</a></li>
     <li>
       <a href="#Part-I">Part I : Introduction</a>
-         <ul>
-           
-           </ul>
         </li>
         <li><a href="#Part-II">Part II: HTTP and DNS</a>
             <ul>      
