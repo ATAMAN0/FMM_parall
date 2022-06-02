@@ -180,13 +180,14 @@ After parallelization, we change the value of num_thread to examine how the opti
 </tr>
     
 
+
 <tr>
     <td align="center"><br /><sub>
-      <img width="436" alt="seqq_ex" src="https://user-images.githubusercontent.com/85369625/171747792-3c0e7bb8-969e-4af0-9f8c-f222df073e88.PNG">
+<img width="304" alt="2_threads" src="https://user-images.githubusercontent.com/85369625/171751085-e05c1f5f-0738-41bd-8f3b-8db9b478a50f.PNG">
    </sub><br /></td>
 
    <td align="center"><br /><sub>  
-            <img width="479" alt="parr_" src="https://user-images.githubusercontent.com/85369625/171747697-101cab19-1184-46cc-a832-0eab0f589395.PNG">
+<img width="306" alt="4_threads" src="https://user-images.githubusercontent.com/85369625/171751112-ba055adc-91dc-4ba6-a006-b4862c172e7d.PNG">
    </sub><br /></td>
 </tr>
 
@@ -203,11 +204,11 @@ After parallelization, we change the value of num_thread to examine how the opti
 
 <tr>
     <td align="center"><br /><sub>
-      <img width="436" alt="seqq_ex" src="https://user-images.githubusercontent.com/85369625/171747792-3c0e7bb8-969e-4af0-9f8c-f222df073e88.PNG">
+<img width="306" alt="8_threads" src="https://user-images.githubusercontent.com/85369625/171751127-c87a09d5-0521-4705-bec4-d2975dbbe2a7.PNG">
    </sub><br /></td>
 
    <td align="center"><br /><sub>  
-            <img width="479" alt="parr_" src="https://user-images.githubusercontent.com/85369625/171747697-101cab19-1184-46cc-a832-0eab0f589395.PNG">
+<img width="325" alt="16_thread" src="https://user-images.githubusercontent.com/85369625/171751134-0e9e2585-02df-4bf5-939e-b40769bbf085.PNG">
    </sub><br /></td>
 </tr>
 </table> 
