@@ -165,6 +165,10 @@ After parallelization, we change the value of num_thread to examine how the opti
 #define CHUNK 20
 ```
 
+> for one thread :
+<img width="309" alt="one_thread" src="https://user-images.githubusercontent.com/85369625/171752134-93d74bc2-1053-4dd8-b7e3-82bfb995330f.PNG">
+
+
 <table>
 <tr>
     <td align="center"><br /><sub>
