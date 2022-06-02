@@ -15,14 +15,22 @@
 
   <summary>Table of Contents</summary>
   <ol>
-     <li><a href="#Project-description">Project description</a></li>
+     <li>
+             <a href="#Project-description">Project description</a>
+     </li>
    
-       <li><a href="#Part-I">Part I : Introduction</a></li>
+     <li>
+               <a href="#Part-I">Part I : Introduction</a>
+     </li>
         
-     <li><a href="#Part-II">Seq Code vs parallel code</a> </li>
+     <li>
+             <a href="#Part-II">Seq Code vs parallel code</a> *
+     </li>
 
            
-        <li><a href="#Part-III">Parallélisme par thread</a></li>
+     <li>
+             <a href="#Part-III">Parallélisme par thread</a>
+     </li>
 
         
    </ol>
