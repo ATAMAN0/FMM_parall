@@ -113,28 +113,19 @@ main-parr
 ```C
 int main(int argc, char **argv) {
 /*----------------------------------------------------------------------------*/
-  
   int j;
-  double diff,max_diff = 0.0;
+  double diff,max_diff = 0.0,tstart,tend;
 
-  double x = omp_get_wtime () ;
-/*****************************************************************************/
+  tstart = omp_get_wtime();
 
+  /*****************************************************************************/
   initialize();  /* Randomly generate particle positions & charges */
   mp_leaf();  /* Compute multipoles at the leaf cells */
-
   upward();  /* Upward pass to compute multipoles at all quadtree levels */
-   
   downward();  /* Dowaward pass to compute local-expansion terms */
-    
-  nn_direct(); /* Evaluate potentials at all particle positions */
-
+  nn_direct();  /* Evaluate potentials at all particle positions */
   all_direct();  /* All-pairs direct evaluation of potentials for validation */
 
-
-  omp_set_num_threads(NUM_THREADS);
-
-  #pragma omp  for schedule  (dynamic,CHUNK)  //num_threads (NUM_THREADS)
   for (j=0; j<Npar; j++) {
     diff = (pot[j]-pot_direct[j])/pot_direct[j];
     diff = diff>0 ? diff : -diff;
@@ -142,18 +133,28 @@ int main(int argc, char **argv) {
   }
 
   printf("\n===== Max potential difference = %e =====\n",max_diff);
-  printf("===== Total  energy  = %e  =====\n",
+  printf("===== Total  energy  = %e   =====\n",
     eng);
 
-/*****************************************************************************/
+  /*****************************************************************************/
 
-double y = omp_get_wtime () ;
+tend = omp_get_wtime();
+    	  printf("===== total time = %f =====\n\n",
+    tend-tstart);
 
-   printf("===== total time = %f =====\n\n",y-x);
   return 0;
-
 }
 ```
+<table>
+  <tr>
+<td align="right"><br /><sub>  
+    <img src="https://user-images.githubusercontent.com/80456274/152738073-50d81304-6662-4f5e-ae41-a44374e31789.png" alt="Logo" width="300" height="250">   
+</sub><br /></td></tr>   
+     
+<td align="left"><br /><sub>  
+    <img src="https://user-images.githubusercontent.com/80456274/152738073-50d81304-6662-4f5e-ae41-a44374e31789.png" alt="Logo" width="300" height="250">   
+</sub><br /></td></tr>   
+</table>
 
 # Part-III
 
