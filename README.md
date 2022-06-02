@@ -146,17 +146,84 @@ tend = omp_get_wtime();
 }
 ```
 <table>
-  <tr>
-<td align="right"><br /><sub>  
-    <img src="https://user-images.githubusercontent.com/80456274/152738073-50d81304-6662-4f5e-ae41-a44374e31789.png" alt="Logo" width="300" height="250">   
-</sub><br /></td></tr>   
-     
-<td align="left"><br /><sub>  
-    <img src="https://user-images.githubusercontent.com/80456274/152738073-50d81304-6662-4f5e-ae41-a44374e31789.png" alt="Logo" width="300" height="250">   
-</sub><br /></td></tr>   
-</table>
+<tr>
+    <td align="center"><br /><sub>
+      Seq_exmpl
+   </sub><br /></td>
+
+   <td align="center"><br /><sub>  
+       parralel_version
+   </sub><br /></td>
+</tr>
+    
+
+<tr>
+    <td align="center"><br /><sub>
+      <img width="436" alt="seqq_ex" src="https://user-images.githubusercontent.com/85369625/171747792-3c0e7bb8-969e-4af0-9f8c-f222df073e88.PNG">
+   </sub><br /></td>
+
+   <td align="center"><br /><sub>  
+            <img width="479" alt="parr_" src="https://user-images.githubusercontent.com/85369625/171747697-101cab19-1184-46cc-a832-0eab0f589395.PNG">
+   </sub><br /></td>
+</tr>
+</table> 
+    
+
 
 # Part-III
+##parallelism per thread
+After parallelization, we change the value of num_thread to examine how the optimization performs with different thread counts. [2,4,8,16] the value
+
+> We add two variable to be able to control the values of CHUNKS (iterations per thread) and NUM_THREADS (num_thread)
+```C
+#define NUM_THREADS 16
+#define CHUNK 20
+```
+
+<table>
+<tr>
+    <td align="center"><br /><sub>
+      Seq_exmpl
+   </sub><br /></td>
+
+   <td align="center"><br /><sub>  
+       parralel_version
+   </sub><br /></td>
+</tr>
+    
+
+<tr>
+    <td align="center"><br /><sub>
+      <img width="436" alt="seqq_ex" src="https://user-images.githubusercontent.com/85369625/171747792-3c0e7bb8-969e-4af0-9f8c-f222df073e88.PNG">
+   </sub><br /></td>
+
+   <td align="center"><br /><sub>  
+            <img width="479" alt="parr_" src="https://user-images.githubusercontent.com/85369625/171747697-101cab19-1184-46cc-a832-0eab0f589395.PNG">
+   </sub><br /></td>
+</tr>
+
+<tr>
+    <td align="center"><br /><sub>
+      Seq_exmpl
+   </sub><br /></td>
+
+   <td align="center"><br /><sub>  
+       parralel_version
+   </sub><br /></td>
+</tr>
+    
+
+<tr>
+    <td align="center"><br /><sub>
+      <img width="436" alt="seqq_ex" src="https://user-images.githubusercontent.com/85369625/171747792-3c0e7bb8-969e-4af0-9f8c-f222df073e88.PNG">
+   </sub><br /></td>
+
+   <td align="center"><br /><sub>  
+            <img width="479" alt="parr_" src="https://user-images.githubusercontent.com/85369625/171747697-101cab19-1184-46cc-a832-0eab0f589395.PNG">
+   </sub><br /></td>
+</tr>
+</table> 
+
 
 
 
