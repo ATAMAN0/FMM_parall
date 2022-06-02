@@ -62,6 +62,98 @@ We worked on a code that concerns FMM implementation that computes electrostatic
 # Part-II
 ## seq-code__vs__paralle-code
 
+main-seq 
+
+```C
+int main(int argc, char **argv) {
+/*----------------------------------------------------------------------------*/
+  
+  int j;
+  double diff,max_diff = 0.0;
+
+  double x = omp_get_wtime () ;
+/*****************************************************************************/
+
+  initialize();  /* Randomly generate particle positions & charges */
+  mp_leaf();  /* Compute multipoles at the leaf cells */
+
+  upward();  /* Upward pass to compute multipoles at all quadtree levels */
+   
+  downward();  /* Dowaward pass to compute local-expansion terms */
+    
+  nn_direct(); /* Evaluate potentials at all particle positions */
+
+  all_direct();  /* All-pairs direct evaluation of potentials for validation */
+
+
+  omp_set_num_threads(NUM_THREADS);
+
+  #pragma omp  for schedule  (dynamic,CHUNK)  //num_threads (NUM_THREADS)
+  for (j=0; j<Npar; j++) {
+    diff = (pot[j]-pot_direct[j])/pot_direct[j];
+    diff = diff>0 ? diff : -diff;
+    max_diff = diff>max_diff ? diff : max_diff;
+  }
+
+  printf("\n===== Max potential difference = %e =====\n",max_diff);
+  printf("===== Total  energy  = %e  =====\n",
+    eng);
+
+/*****************************************************************************/
+
+double y = omp_get_wtime () ;
+
+   printf("===== total time = %f =====\n\n",y-x);
+  return 0;
+
+}
+```
+
+main-parr
+```C
+int main(int argc, char **argv) {
+/*----------------------------------------------------------------------------*/
+  
+  int j;
+  double diff,max_diff = 0.0;
+
+  double x = omp_get_wtime () ;
+/*****************************************************************************/
+
+  initialize();  /* Randomly generate particle positions & charges */
+  mp_leaf();  /* Compute multipoles at the leaf cells */
+
+  upward();  /* Upward pass to compute multipoles at all quadtree levels */
+   
+  downward();  /* Dowaward pass to compute local-expansion terms */
+    
+  nn_direct(); /* Evaluate potentials at all particle positions */
+
+  all_direct();  /* All-pairs direct evaluation of potentials for validation */
+
+
+  omp_set_num_threads(NUM_THREADS);
+
+  #pragma omp  for schedule  (dynamic,CHUNK)  //num_threads (NUM_THREADS)
+  for (j=0; j<Npar; j++) {
+    diff = (pot[j]-pot_direct[j])/pot_direct[j];
+    diff = diff>0 ? diff : -diff;
+    max_diff = diff>max_diff ? diff : max_diff;
+  }
+
+  printf("\n===== Max potential difference = %e =====\n",max_diff);
+  printf("===== Total  energy  = %e  =====\n",
+    eng);
+
+/*****************************************************************************/
+
+double y = omp_get_wtime () ;
+
+   printf("===== total time = %f =====\n\n",y-x);
+  return 0;
+
+}
+```
 
 # Part-III
 
