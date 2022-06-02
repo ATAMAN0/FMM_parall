@@ -19,46 +19,12 @@
     <li>
       <a href="#Part-I">Part I : Introduction</a>
         </li>
-        <li><a href="#Part-II">Part II: HTTP and DNS</a>
-            <ul>      
-              <li><a href="#Registration-of-the-website-in-zone-files-of-the-DNS">Reconfigure the zone-files (DNS)</a></li>
-              <li><a href="#Testing-the-access-by-ADDR-&-NS">Test the access (addr/ns)</a></li>
-            </ul>
+        <li><a href="#Part-II">Seq Code vs parallel code</a>
+
            </li> 
-        <li><a href="#Part-III">Part III: Secure a repository</a>
-             <ul>      
-              <li><a href="#Access-filtering-at-users-level">Access filtering at user's level</a></li>
-                 <ul>      
-                   <li><a href="#Modification-the-configuration">Modification the configuration</a></li>
-                   <li><a href="#Create-accounts">Create accounts (Apache provides a tool to easily generate encrypted passwords)</a></li>
-                 <ul>
-                   <li><a href="#Create-a-password-for-the-admin-account">Create a password for the admin account</a></li>
-                   <li><a href="#Verify-the-encrypting-of-the-username-and-the-password">Verify the encrypting of the username and the password</a></li>
-                     </ul>
-                 </ul>
-              <li><a href="#Test-the-access-to-the-website">Test the access to the website, what do you notice?</a></li>
-              <li><a href="#Check-if-the-password-is-encrypted">Check if the password is encrypted at the level of transfer from the client to the server</a></li>
-              <li><a href="#What-is-the-solution">What is the solution?</a></li>
-            </ul>
+        <li><a href="#Part-III">Parallélisme par thread</a>
+
         </li>
-        <li><a href="#Part-IV">Part IV: Configuration with .htaccess</a>
-          <ul>      
-             <li><a href="#Configure-Apache-with__htaccess">Configure Apache with .htaccess.</a></li>
-               <ul>      
-                <li><a href="#Authorize-the-modification">Authorize the modification</a></li>
-                <li><a href="#Create-a-file-named-htaccess">Create a file named “.htaccess” in/var/www/mywebsite2/.</a></li>
-                <li><a href="#Configure-the-htaccess">Configure the .htaccess.</a></li>
-                <li><a href="#Create-the-digest_users-file">Create the digest-users file.</a></li>
-              </ul>
-             <li><a href="#Check-if-the-password-is-encrypted">Check if the password is encrypted</a></li>
-          </ul>
-        </li> 
-        <li><a href="#Part-V">Part V: Personal Directories</a>
-            <ul>      
-              <li><a href="#Create-a-user">Create a user</a></li>
-              <li><a href="#Each-user-must-have-a--public_html--folder-in-their-home-directory">Each user must have a “public_html” folder in their home directory</a></li>
-            </ul>
-         </li> 
    </ol>
 
 
