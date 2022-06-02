@@ -21,12 +21,12 @@
            </ul>
     </li>
         <li>
-            <a href="#Part-II">Part II : seq-code vs paralle-code</a>
+            <a href="#Part-II">Part II : Seq-code vs paralle-code</a>
             <ul> 
               <li><a href="#"></a></li>
             </ul>
            </li> 
-        <li><a href="#Part-III">Part III :</a></li>
+        <li><a href="#Part-III">Part III :Parallelism per thread</a></li>
    </ol>
 
 
