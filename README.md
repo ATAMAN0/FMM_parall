@@ -168,10 +168,7 @@ After parallelization, we change the value of num_thread to examine how the opti
 <table>
 <tr>
     <td align="center"><br /><sub>
-        
-  
         #define NUM_THREADS 2
-   
    </sub><br/></td>
 
    <td align="center"><br /><sub>  
