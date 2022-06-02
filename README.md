@@ -3,7 +3,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    ![parra_distr_](https://user-images.githubusercontent.com/85369625/171732997-003db555-d520-47ef-80bb-0782d1af2369.jpg)
+        <img src=![parra_distr_](https://user-images.githubusercontent.com/85369625/171732997-003db555-d520-47ef-80bb-0782d1af2369.jpg) alt="Logo" width="700" height="400">
+
+    
 
    
   <h2 align="center">Project 3</h2>
