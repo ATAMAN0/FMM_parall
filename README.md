@@ -5,7 +5,7 @@
 <br />
 <div align="center">
     <img src="https://user-images.githubusercontent.com/80456274/171564992-e377d833-c780-45aa-ab44-60c6b35c0425.png" alt="Logo" width="550" height="380">   
-    <h2 align="center">Poisson-Boltzmann</h2>
+    <h2 align="center">FMM (fast multipole methode) </h2>
     <h3 align="center">Mini Projet</h3>
 </div>
 
@@ -50,6 +50,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 # Part-I 
+La méthode multipolaire rapide (MMR) (en anglais Fast multipole method, FMM) est une technique mathématique développée pour accélérer le calcul des forces de longue portée dans le problème à N corps.
 
 # Part-II
 
