@@ -50,7 +50,9 @@ To get a local copy up and running follow these simple example steps.
 
 
 # Part-I 
-La méthode multipolaire rapide (MMR) (en anglais Fast multipole method, FMM) est une technique mathématique développée pour accélérer le calcul des forces de longue portée dans le problème à N corps.
+The fast multipole method (FMM) is a numerical methodology designed to reduce the time it takes to calculate long-ranged forces in the n-body problem. It accomplishes this by employing a multipole expansion to enlarge the system Green's function, which allows one to group sources that are close together and treat them as if they were a single source .[1]
+
+The FMM has also been used to speed up the iterative solver in the method of moments (MOM) as applied to computational electromagnetics problems.[2] The FMM is based on the multipole expansion of the vector Helmholtz equation and was first introduced in this way by Leslie Greengard and Vladimir Rokhlin Jr.[3]. The appropriate matrix elements are not required when employing the FMM to treat interactions between far-away basis functions.
 
 # Part-II
 
