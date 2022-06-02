@@ -19,12 +19,7 @@
     <li>
       <a href="#Part-I">Part I : Introduction</a>
          <ul>
-              <li><a href="#Installation">Install the Apache2 server</a></li>
-              <li><a href="#verification-the-configuration-files">Verify the configuration files and identify the role of each file:</a></li>
-                  <ul> 
-                      <li><a href="#role-of-each-file">apache2.conf, envvars, ports.conf, conf.d, sites-available, sites-enabled, mods-available and mods-enabled</a></li>
-                  </ul>
-              <li><a href="#Website-configuration">Website configuration.</a></li>       
+           
            </ul>
         </li>
         <li><a href="#Part-II">Part II: HTTP and DNS</a>
