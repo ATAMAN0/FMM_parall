@@ -1,13 +1,13 @@
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
-<br />
+<!--<br />
 <div align="center">
         <img src="https://user-images.githubusercontent.com/85369625/171732997-003db555-d520-47ef-80bb-0782d1af2369.jpg" alt="Logo" width="700" height="400">
 
   <h2 align="center">Project 3</h2>
   <h3 align="center">HyperText Transfer Protocol Apache2</h3>
-</div>
+</div>-->
 
 ![parra_distr_](https://user-images.githubusercontent.com/85369625/171732997-003db555-d520-47ef-80bb-0782d1af2369.jpg)
 
