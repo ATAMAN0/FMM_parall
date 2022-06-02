@@ -1,313 +1,69 @@
 <div id="top"></div>
 
+
 <!-- PROJECT LOGO -->
-<!--<br />
+<br />
 <div align="center">
-        <img src="https://user-images.githubusercontent.com/85369625/171732997-003db555-d520-47ef-80bb-0782d1af2369.jpg" alt="Logo" width="700" height="400">
-
-  <h2 align="center">Project 3</h2>
-  <h3 align="center">HyperText Transfer Protocol Apache2</h3>
-</div>-->
-
-![parra_distr_](https://user-images.githubusercontent.com/85369625/171732997-003db555-d520-47ef-80bb-0782d1af2369.jpg)
+    <img src="https://user-images.githubusercontent.com/80456274/171564992-e377d833-c780-45aa-ab44-60c6b35c0425.png" alt="Logo" width="550" height="380">   
+    <h2 align="center">Poisson-Boltzmann</h2>
+    <h3 align="center">Mini Projet</h3>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
   <summary>Table of Contents</summary>
+  <ol>      
+      <a href="#about-the-project">About The Project</a>         
+  </ol>
   <ol>
-     <li>
-             <a href="#Project-description">Project description</a>
-     </li>
-   
-     <li>
-               <a href="#Part-I">Part I : Introduction</a>
-     </li>
-        
-     <li>
-             <a href="#Part-II">Seq Code vs parallel code</a> 
-     </li>
-
-           
-     <li>
-             <a href="#Part-III">Parallélisme par thread</a>
-     </li>
-
-        
+    <li>
+      <a href="#Part-I">Part I :</a>
+         <ul>
+              <li><a href="#"></a></li>
+           </ul>
+    </li>
+        <li>
+            <a href="#Part-II">Part II :</a>
+            <ul> 
+              <li><a href="#"></a></li>
+            </ul>
+           </li> 
+        <li><a href="#Part-III">Part III :</a></li>
    </ol>
 
 
 
-# Project description:
+<!-- ABOUT THE PROJECT -->
+# About The Project
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
->  Apache is an open-source web server that powers a large number of websites
-> around the world. Its official name is Apache HTTP Server and it is maintained
-> and developed by the Apache Software Foundation.
-> 
->  Apache allows website owners to provide content on the web, hence the name
-> “web server”. It is one of the oldest and most reliable web servers with a first
-> version released over 25 years ago, in 1995.
-> 
->  When a user wants to visit a website, they type a domain name (or IP address)
-> in the browser’s bar. Then the web server delivers the requested files by acting as
-> a virtual delivery agent.
-
-# Part-I
-
-## Installation
-```sh
-sudo apt install apache2 -y
-```
-That’s it, Apache is installed in your Kali Linux now you have to start the service using this command: 
-```sh
-sudo service apache2 start
-```
-Now you can check the status of the Apache service using this command:
-```sh
-sudo service apache2 status
-```
-
-## verification-the-configuration-files
-
-To verify that apache server working correctly in Kali Linux, open your browser, type your server IP address or domain name `http://YOUR_IP_OR_DOMAIN/` and you will see the default Apache welcome page as shown below: 
-
-   <p align="center">
-     <img src="images/default-page.png">
-   </p>
-
-## role-of-each-file
-
-In Kali Linux, the Apache configuration files are stored in the `/etc/apache2` directory:
-
-apache configuration files
-
-<p align="center">
-     <img src="images/role-D.png">
-   </p>
-
-Here is a brief description of the files in this directory:
-
-  * **apache2.conf** : the main Apache2 configuration file that contains settings global to Apache.
-
-  * **envvars** : a file where Apache environment variables are set.
-
-  * **ports.conf** : a configuration file that houses the directives that determine the TCP ports Apache is listening on.
-  
-  * **conf.d** : This directory is used for controlling specific aspects of the Apache configuration. For example, it is often used to define SSL configuration and default security choices.
-  
-  * **sites-available** : a directory that has configuration files for Apache Virtual Hosts. Virtual Hosts allow Apache2 to be configured for multiple sites that have separate configurations.
-  
-  * **sites-enabled** : a directory that contains symlinks to the /etc/apache2/sites-available directory.
-  
-  * **mods-available** : a directory that contains configuration files to both load modules and 
-configure them.
-
-  * **mods-enabled** : a directory that holds symlinks to the files in /etc/apache2/mods-available.
-
-## Website-configuration
-The first thing we're going to do is create two directories
-(`mywebsite1` and `mywebsite2`) with the command: 
-
-```sh
-sudo mkdir  /var/www/mywebsite1
-```
-
-```sh
-sudo mkdir  /var/www/mywebsite2
-```
-
-Then we're going to create two pages in each directory
-(`index.html`) with the command: 
-
-```sh
-sudo nano  /var/www/mywebsite1/html.index
-```
-```sh
-sudo nano  /var/www/mywebsite2/html.index
-```
-> Note : we're going to focus on the first page only in the rest of the project
-
-   <p align="center">
-     <img src="images/ataman_html.png">
-   </p>
-   
-
-After that we create the conf-file (`mywebsite1.conf`)
-   <p align="center">
-     <img src="images/conffile_in_site_av.png">
-   </p>
-   
-Where we put our settings for the good fonctionality of the manipulated website
-   <p align="center">
-     <img src="images/conffile_.png">
-   </p>
-   
-And then we avtivate the vhost :
-```sh
-sudo a2ensite mywebsite1.conf
-```
-> Wich create a symlink from site-available to site-enabled
-
-In order to update the new configuration we simply reload the service :
-```sh
-sudo systemctl reload apache2
-```
-
-And finally we're going to test our conf :
-   <p align="center">
-     <img src="images/test_cl.jpg">
-   </p>
-   
-
-
+1. [**How to install visual studio code**](https://youtu.be/MlIzFUI1QGA)
+2. **Clone the repo**
+   ```sh
+   git clone https://github.com/IlyasKadi/poisson-boltzmann.git
+   ```
+ 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+# Part-I 
 
 # Part-II
 
-## Registration-of-the-website-in-zone-files-of-the-DNS
-We added new records for the website :
-| dir_resol      | rev_resol  | 
-|  --------      | ----       | 
-| ![Image ](images/dns_direct_resCONF.png)  |![Image ](images/dns_rev_resCONF.png) |   
 
-## Testing-the-access-by-ADDR-&-NS
-| by NS      | by ADDR  | 
-|  --------      | ----       | 
-| ![Image ](images/ataaman_me.png)  |![Image ](images/192__134.png) |
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 # Part-III
 
-## Access-filtering-at-users-level
-### Modification-the-configuration
-   <p align="center">
-     <img src="images/user_pass.png">
-   </p>
-   
-### Create-accounts 
-#### Create-a-password-for-the-admin-account
-We are going to create the .htpasswd file with a new user (`oussama`)
-```sh
-sudo htpasswd -c /etc/apache2/.htpasswd oussama
-```
-Then we will be asked to supply and confirm a password for that user.
-  
-#### Verify-the-encrypting-of-the-username-and-the-password
-   <p align="center">
-     <img src="images/pass_check.png">
-   </p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Test-the-access-to-the-website
-Now the access is restricted :
-   <p align="center">
-     <img src="images/to_be_filled.png">
-   </p>
-If you do a mistake while typing your username and pass :
-   <p align="center">
-     <img src="images/user_failed_to join.png">
-   </p>
-   
-But if you got it right you will have access to the page
-<p align="center">
-     <img src="images/test_cl.jpg">
-   </p>
-      
-## Check-if-the-password-is-encrypted
-We're going to ckeck if the password is encrypted at the level of transer : (using wireshark)
-    <p align="center">
-        <img src="images/sniffed_success.png">
-    </p>
-   
-## What-is-the-solution
-Well, the solution is simply to find another way of authentification, that makes sure that the password is encrypted
-at the level of transfer.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# Part-IV
-
-> The .htaccess files are Apache configuration files, allowing to define rules in
-> a directory and in all its subdirectories (which do not have such a file inside). They
-> can be used to protect a directory with a password, to change the name or
-> extension of the index page, or to prohibit access to the directory.
-> 
-> The .htaccess file is placed in the directory in which it must act. It thus acts
-> on the permissions of the directory that contains it and of all its sub-directories.
-> Another .htaccess file can be placed in a subdirectory of a directory already
-> controlled by an .htaccess file. The .htaccess file in the parent directory remains
-> in “activity” until the functionality is rewritten.
-
-## Configure-Apache-with__htaccess
-### Authorize-the-modification
-By default, the .htaccess file is not enabled.
-
-1. Open the default host configuration file by entering the following command in the terminal:
-
-```sh
-sudo nano /etc/apache2/sites-available/mywebsite1.conf
-```
-    
-2. Locate the section labeled <Directory /var/www>.
-In that section, change the AllowOverride None entry to all: *AllowOverride All*
-
-  <p align="center">
-        <img src="images/htaccess-override-all.png">
-    </p>
-
-3. Next, restart the Apache service:
-```sh
-sudo systemctl apache2 restart
-```
-### Create-a-file-named-htaccess
-To create and open the .htaccess file for editing, enter:
-```sh
-sudo nano /var/www/mywebsite1.com/.htaccess
-```
-### Configure-the-htaccess
-<p align="center">
-       <img src="images/create-htaccess.png">
-   </p>
-   
-### Create-the-digest_users-file
-For digest authentication we need to use a utility called `htdigest`, unlike with basic authentication where we used htpasswd. The application takes the file name, `private` and `ataman` as arguments, then prompts twice for the user’s password. The flag `-c` creates a new file, it overrides the existing one if exists.
-
-```sh
-htdigest -c /etc/apache2/.htpasswd private ataman
-```
-Command to see Apache password file:
-```sh
-sudo nano /etc/apache2/.htpasswd 
-```
-
- <p align="center">
-       <img src="images/pass-htaccess.png">
-   </p>
-
-## Check-if-the-password-is-encrypted
-
-| login      | wireshark  | 
-|  --------      | ----       | 
-| ![Image ](images/d_login.png)  |![Image ](images/md5_.png) |
-   
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-# Part-V
-  
-## Create-a-user
-## Each-user-must-have-a--public_html--folder-in-their-home-directory  
-
-<p align="center">
-     <img src="images/part3.png">
-   </p>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-Out Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0)
-
-Project Link: [https://github.com/IlyasKadi/Domain-Name-System-Protocol](https://github.com/IlyasKadi/Domain-Name-System-Protocol)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Our Team     : [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0)  
+ 
+   Project Link : [The 2048 Game](https://github.com/IlyasKadi/poisson-boltzmann)   
+ 
+  > Encadré par  : [Mr.ABBAD-Zakariae](https://github.com/IlyasKadi/poisson-boltzmann)  
+                                                                                             
 <p align="right">(<a href="#top">back to top</a>)</p>
