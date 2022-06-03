@@ -157,7 +157,7 @@ tend = omp_get_wtime();
 
 # Part-III
 ## parallelism per thread
-After parallelization, we change the value of num_thread to examine how the optimization performs with different thread counts. [2,4,8,16] the value
+After parallelization, we change the value of num_thread to examine how the optimization performs with different thread counts. [2,4,8,16].
 
 > We add two variable to be able to control the values of CHUNKS (iterations per thread) and NUM_THREADS (num_thread)
 ```C
